@@ -10,14 +10,15 @@ import './Form.css';
        const [tell,setTell] = useState();
        const [password, setPassword] = useState(); 
        
-    const CForm = () => {
-      const[values,setValues] = useState[Forms];
-      console.log(values); 
+    ///const CForm = () => {
+      //const[values,setValues] = useState(Forms);
+      
      
       function onChange(e){
        const{name,value} = e.target.value;
          
         setValues({...values,[name]:value});
+        console.log(values); 
        }
     return(
       
@@ -44,6 +45,5 @@ import './Form.css';
        
       </div>
     )
-    }  
  };
  export default Forms;
