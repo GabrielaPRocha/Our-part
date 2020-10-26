@@ -1,0 +1,19 @@
+.logo-size{
+    max-height: fit-content;
+}
+
+header{
+    margin-bottom: auto;
+    background-color: #0B3073;
+}
+
+a{
+    color: var(--color-grey-scale-1);
+}
+
+.linha{
+    margin-top: 10vh;
+    display: block;
+    background-color: var(--color-grey-scale-3);
+    color: var(--color-destak-ligth);
+}
