@@ -1,25 +1,30 @@
-import React from 'react';
+import React,{Component} from 'react';
 import { useState } from 'react';
-import './Form.css';
+//import './Form.css';
 
-  const Forms =(props) => {
+  const Forms = {
+  name:"",
+  cpf:"",
+  bday:"",
+  email:"",
+  tell:"",
+  password:"",
+}/*=(props) => {
       const [name,setName] = useState();
        const [cpf,setCpf] = useState();
        const [bday,setBday] = useState(); 
        const [email,setEmail] = useState();
        const [tell,setTell] = useState();
-       const [password, setPassword] = useState(); 
+       const [password, setPassword] = useState(); */
        
-    ///const CForm = () => {
-      //const[values,setValues] = useState(Forms);
-      
+   const CForm = () => {
+      const[values,setValues] = useState(Forms);
      
-      function onChange(e){
-       const{name,value} = e.target.value;
-         
-        setValues({...values,[name]:value});
-        console.log(values); 
-       }
+      function onChange(e)  {
+       const { name, value } = e.target;
+
+       console.log({ name, value });
+     }
     return(
       
       <div className="Tried">
@@ -40,10 +45,9 @@ import './Form.css';
         <input name="password" placeholder="Alterar Senha" type="password" onChange={onChange}/>
         </div>
         </form>
-        <button>Salvar</button>
-
-       
+        <button type="submit">Salvar</button>       
       </div>
-    )
- };
+  
+   )   
+  };
  export default Forms;
