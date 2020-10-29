@@ -12,7 +12,6 @@ import './Form.css';
        
     const CForm = () => {
      const[values,setValues] = useState(Forms);
-     console.log([CForm]) 
      
      /* function onChange(e){
        const{name,value} = e.target;
@@ -26,18 +25,18 @@ import './Form.css';
       <form>
        <div className="form-editUser">
        <h1>Dados do Usuario </h1>
-        <input name="name" placeholder="Nome completo" type="text"/>
-        <input name="cpf" placeholder="CPF" type="number"/>
-        <input name="bday" placeholder="Data de nascimento" type="date"/>
+        <input name="name" placeholder="Nome completo" type="text"  onChange={onChange}/>
+        <input name="cpf" placeholder="CPF" type="number" onChange={onChange}/>
+        <input name="bday" placeholder="Data de nascimento" type="date" onChange={onChange}/>
         </div>
         </form>
         <form> 
         <div className="changes">    
         <h2>Dados alteravais</h2>      
-        <input name="email" placeholder="Email" type="mail"/>
-        <input name="social" placeholder="Como deseja ser chamado" type="mail"/>
-        <input name="tell" placeholder="Telefone" type="number"/>
-        <input name="password" placeholder="Alterar Senha" type="password"/>
+        <input name="email" placeholder="Email" type="mail"onChange={onChange}/>
+        <input name="social" placeholder="Como deseja ser chamado" type="text"onChange={onChange}/>
+        <input name="tell" placeholder="Telefone" type="number"onChange={onChange}/>
+        <input name="password" placeholder="Alterar Senha" type="password" onChange={onChange}/>
         </div>
         </form>
         <button>Salvar</button>
@@ -45,6 +44,6 @@ import './Form.css';
        
       </div>
     )
-    
+    }
  };
  export default Forms;
