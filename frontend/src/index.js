@@ -7,6 +7,7 @@ import Register from './Components/register/Register';
 import Main from './Components/main/Main';
 import About from './Components/about/About';
 import Forms from'./Components/EditUser/Form.jsx';
+import './Components/Gastos/Gastos.jsx';
 import E404 from './Components/e404/E404';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import'bootstrap/dist/css/bootstrap.css';
@@ -23,8 +24,9 @@ ReactDOM.render(
             <Route path="/EditUser" exact={true} component={Forms} />
             <Route path="/about" component={About} />
             <Route path="*" component={E404} />
-            <Route path="/EditUser" exact={true} component={Form}/>
+            <Route path="/Gastos" exact={true} />
         </Switch>
+        
     </ BrowserRouter>
     , document.getElementById('root'));
 // registerServiceWorker();
